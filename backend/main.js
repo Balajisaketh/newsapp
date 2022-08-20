@@ -70,9 +70,20 @@ app.get('/news', (req, res) => {
         console.log(err);
     }
     );
+
+
 }
 );
 
+
+
+app.get('/getNews/:uid', (req, res) => {
+    News.findOne({uid: req.params.uid}).then(news =>{
+        res.send(news);
+    }).catch(err => {
+        console.log(err);
+    });
+});
 
 
 app.listen(PORT, () => {
