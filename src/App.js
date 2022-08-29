@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('http://localhost:4000/news').then(res => {
+    axios.get('https://linkshortner.me/api/news').then(res => {
       setArticles(res.data);
     }
     );

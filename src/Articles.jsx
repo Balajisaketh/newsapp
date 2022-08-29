@@ -21,6 +21,7 @@ function Articles({ articles }) {
                 <Article key={article.url} article={article} />
             ))
         }
+        
     </div>
     </>
   )
