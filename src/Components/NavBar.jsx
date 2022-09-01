@@ -1,11 +1,12 @@
-import React from 'react';
-import { Navbar, Container } from 'react-bootstrap';
+import React from 'react'
+import {Container,Navbar} from 'react-bootstrap'
 function NavBar() {
   return (
     <>
+
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#home">
             <img
               alt=""
               src="/logo.svg"
@@ -17,8 +18,9 @@ function NavBar() {
           </Navbar.Brand>
         </Container>
       </Navbar>
-    </>
+      </>
+    
   )
 }
 
-export default NavBar;
+export default NavBar
