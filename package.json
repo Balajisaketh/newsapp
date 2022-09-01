@@ -22,11 +22,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "electron-start":"electron .",
+    "electron-start": "electron .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pack": "electron-builder -m"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^20.1.1"
+    "electron": "^20.1.1",
+    "electron-builder": "^23.3.3"
   }
 }
